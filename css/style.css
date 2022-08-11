@@ -1,0 +1,220 @@
+/*css Reset */
+{
+    margin: 0;
+    padding: 0;
+}
+/*CSS Variables*/
+:root {
+    --navbar-height:59px;
+}
+/*Nav bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+/* Nav bar:logo and image*/
+#logo{
+    margin:10px 3px;;
+}
+#logo img{
+    height: 56px;
+    margin: 10px 3px;;
+}
+
+
+/* Nav bar:list styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai ', cursive; 
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 74%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top:0px;
+    left: 0px;
+}
+#navbar ul li{
+    /*color:white;*/
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color:azure;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:#c09a5d    ;
+    background-color: white;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url(../heroA1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height:70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;  
+    top:0px;
+    left: 0px;
+}
+#home h1{
+    color:#7b381b;
+    font-family:'Bree Serif', serif ;
+    text-align:var(--navbar-height);
+}
+#home p{
+    color:#271b10;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif' , serif;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+/*Services section*/
+#services{
+    margin:4px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 35px;
+    background:#fffefe;
+}
+#services .box img{
+    height: 160px;
+    margin:auto;
+    display:block;
+    
+}
+/*client section*/
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('../hero7.jpeg');
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 100px;
+    width: 100px;
+}
+#services{}
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box lable{
+    font-size: 1.3rem;
+    font-family:'Bree Serif' , serif ;
+}
+footer{
+    background: black;
+    color:white;
+    padding: 9px 20px;
+}
+/*utility classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding:0px;
+    font-family:'Bree Serif', serif ;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family:'Bree Serif', serif ;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px   #7b381b  ;
+    background-color: #896e5a    ;
+    margin: 12px 28px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    color:#7b381b
+    ;
+    background-color:transparent  ;
+}
+.center{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
+.center1{
+    text-align: center;
+    padding-top:300px ;
+    padding-bottom: 10px;
+}
+.two{
+    text-align: center;
+    padding:0px;
+    margin: 0px 0px;
+    font-size: 2.3rem;
+} 
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
